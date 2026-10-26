@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Wedding of Hizul &amp; Tania</title>
+<meta name="description" content="Undangan pernikahan Hizul Wahyudin &amp; Tania Renata">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Wedding of Hizul &amp; Tania">
+<meta property="og:description" content="Kami mengundang Anda ke hari bahagia kami.">
+<!-- Ganti dengan URL penuh setelah deploy, mis. https://USERNAME.github.io/REPO/assets/img/cover.jpg -->
+<meta property="og:image" content="assets/img/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Amiri:wght@400;700&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lock">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flora" viewBox="0 0 120 120">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <path d="M4 116C20 70 50 40 110 8"/><path d="M4 116C40 100 70 80 112 70"/><path d="M30 82C34 66 28 56 14 50"/>
+    </g>
+    <g fill="currentColor" opacity=".85">
+      <ellipse cx="38" cy="86" rx="9" ry="4" transform="rotate(-50 38 86)"/>
+      <ellipse cx="64" cy="56" rx="10" ry="4.5" transform="rotate(-40 64 56)"/>
+      <ellipse cx="90" cy="34" rx="9" ry="4" transform="rotate(-30 90 34)"/>
+      <ellipse cx="84" cy="82" rx="9" ry="4" transform="rotate(-15 84 82)"/>
+      <ellipse cx="22" cy="60" rx="8" ry="3.5" transform="rotate(-100 22 60)"/>
+    </g>
+    <g>
+      <circle cx="46" cy="72" r="10" fill="#f8ecc0"/><path d="M46 72m-6 0a6 6 0 1 1 6 6M46 72m-3 0a3 3 0 1 1 3 3" fill="none" stroke="#b8862b" stroke-width="1.2"/>
+      <circle cx="102" cy="22" r="8" fill="#fff6dc"/><circle cx="102" cy="22" r="3.5" fill="none" stroke="#b8862b"/>
+      <circle cx="16" cy="100" r="7" fill="#f8ecc0"/><circle cx="16" cy="100" r="3" fill="none" stroke="#b8862b"/>
+    </g>
+  </symbol>
+  <symbol id="tree" viewBox="0 0 100 140">
+    <path d="M50 140V70M50 102L30 82M50 92L72 70" stroke="currentColor" stroke-width="3" fill="none"/>
+    <g fill="rgba(232,200,112,.16)" stroke="currentColor" stroke-width="1.5">
+      <circle cx="50" cy="40" r="26"/><circle cx="28" cy="62" r="20"/><circle cx="74" cy="58" r="20"/>
+    </g>
+    <g fill="#fff6cc"><circle cx="42" cy="32" r="2.5"/><circle cx="60" cy="46" r="2"/><circle cx="26" cy="60" r="2"/><circle cx="76" cy="56" r="2.5"/><circle cx="52" cy="22" r="1.8"/></g>
+  </symbol>
+  <symbol id="bird" viewBox="0 0 50 28"><path d="M2 18Q14 0 25 16Q36 0 48 18Q36 11 25 25Q14 11 2 18Z" fill="currentColor"/></symbol>
+  <symbol id="star" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="22" height="22"/><rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)"/><circle cx="20" cy="20" r="3" fill="currentColor"/></g></symbol>
+</svg>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="birds" aria-hidden="true"></div>
+
+<!-- COVER -->
+<div id="cover">
+  <div class="door l"></div><div class="door r"></div><div class="light"></div>
+  <svg id="castle" viewBox="0 0 400 160" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+    <g fill="#050f33" stroke="#e8c870" stroke-width="1.4">
+      <rect x="20" y="110" width="360" height="50"/>
+      <rect x="40" y="70" width="30" height="90"/><polygon points="35,70 55,30 75,70"/>
+      <rect x="100" y="90" width="26" height="70"/><polygon points="96,90 113,60 130,90"/>
+      <rect x="170" y="50" width="60" height="110"/><polygon points="160,50 200,0 240,50"/>
+      <rect x="274" y="90" width="26" height="70"/><polygon points="270,90 287,60 304,90"/>
+      <rect x="330" y="70" width="30" height="90"/><polygon points="325,70 345,30 365,70"/>
+    </g>
+    <g fill="#ffd978"><rect x="51" y="90" width="5" height="10"/><rect x="109" y="108" width="5" height="10"/><rect x="195" y="70" width="6" height="12"/><rect x="195" y="100" width="6" height="12"/><rect x="283" y="108" width="5" height="10"/><rect x="341" y="90" width="5" height="10"/><path d="M188 160v-22a12 12 0 0 1 24 0v22z"/></g>
+  </svg>
+  <div class="cbox">
+    <p class="cap">THE WEDDING OF</p>
+    <h1 class="script gold">Hizul Wahyudin<br>&amp; Tania Renata</h1>
+    <p class="it">A Royal Fairytale Begins</p>
+    <p class="to">Kepada Yth.<br><b id="guest">Tamu Undangan</b></p>
+    <button id="openBtn" class="btn">BUKA UNDANGAN</button>
+  </div>
+</div>
+
+<!-- Bingkai bunga pada sudut layar -->
+<svg class="vf tl"><use href="#flora"/></svg><svg class="vf tr"><use href="#flora"/></svg>
+<svg class="vf bl"><use href="#flora"/></svg><svg class="vf br"><use href="#flora"/></svg>
+
+<div id="mus"><button id="music" aria-label="Putar atau jeda musik"></button><input id="vol" type="range" min="0" max="1" step=".05" value=".7" aria-label="Volume"></div>
+
+<nav aria-label="Menu undangan">
+  <a href="#beranda">Beranda</a><a href="#mempelai">Mempelai</a><a href="#story">Love Story</a><a href="#acara">Acara</a><a href="#galeri">Galeri</a><a href="#rsvp">RSVP</a><a href="#gift">Wedding Gift</a>
+</nav>
+
+<main>
+<section id="beranda" class="hero">
+  <svg class="tree l"><use href="#tree"/></svg><svg class="tree r"><use href="#tree"/></svg>
+  <div class="wrap">
+    <p class="cap">THE WEDDING OF</p>
+    <h1 class="script gold big">Hizul &amp; Tania</h1>
+    <p class="it">A Royal Fairytale Begins</p>
+    <p class="date" id="hdate"></p>
+  </div>
+</section>
+
+<section id="mempelai">
+  <div class="wrap">
+    <div class="panel">
+      <svg class="flora tl"><use href="#flora"/></svg><svg class="flora tr"><use href="#flora"/></svg><svg class="flora bl"><use href="#flora"/></svg><svg class="flora br"><use href="#flora"/></svg>
+      <svg class="orn"><use href="#star"/></svg>
+      <p class="salam">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+      <p>Dengan memohon rahmat dan ridha Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami.</p>
+    </div>
+    <div class="couple">
+      <figure class="rv"><div class="photo tilt" id="phG" data-alt="Hizul Wahyudin">Foto belum diisi</div>
+        <h2 class="script gold" id="nG"></h2><p class="par" id="pG"></p></figure>
+      <span class="amp script gold">&amp;</span>
+      <figure class="rv"><div class="photo tilt" id="phB" data-alt="Tania Renata">Foto belum diisi</div>
+        <h2 class="script gold" id="nB"></h2><p class="par" id="pB"></p></figure>
+    </div>
+    <div class="photo wide tilt" id="phC" data-alt="Hizul dan Tania" hidden></div>
+  </div>
+</section>
+
+<section id="ayat">
+  <div class="wrap">
+    <h2 class="script gold">A Sacred Promise</h2>
+    <div class="panel">
+      <svg class="flora tl"><use href="#flora"/></svg><svg class="flora tr"><use href="#flora"/></svg><svg class="flora bl"><use href="#flora"/></svg><svg class="flora br"><use href="#flora"/></svg>
+      <svg class="orn"><use href="#star"/></svg>
+      <p class="ar" dir="rtl" lang="ar">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+      <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
+      <p class="src">QS. Ar-Rum [30]: 21</p>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap">
+    <h2 class="script gold">Our Love Story</h2>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="panel dark book tilt" id="book" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="acara">
+  <div class="wrap">
+    <h2 class="script gold">The Royal Wedding Day</h2>
+    <div class="panel dark">
+      <svg class="flora tl"><use href="#flora"/></svg><svg class="flora tr"><use href="#flora"/></svg><svg class="flora bl"><use href="#flora"/></svg><svg class="flora br"><use href="#flora"/></svg>
+      <h3 id="etitle"></h3>
+      <p class="ev"><b id="edate"></b><br><span id="etime"></span></p>
+      <p class="ev"><b id="eplace"></b><br><span id="eaddr"></span></p>
+      <div id="cd" class="cd" aria-live="off"></div>
+      <div class="row"><a id="map" class="btn" target="_blank" rel="noopener">Lihat Lokasi</a><button id="cal" class="btn ghost">Tambah ke Kalender</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeri">
+  <div class="wrap wide">
+    <h2 class="script gold">Royal Gallery</h2>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="rsvp">
+  <div class="wrap">
+    <h2 class="script gold">Konfirmasi Kehadiran</h2>
+    <form id="rf" class="panel dark">
+      <label>Nama tamu<input id="rname" name="n" required maxlength="60" autocomplete="name"></label>
+      <label>Jumlah tamu yang hadir<input name="j" type="number" min="1" max="10" value="1" required></label>
+      <label>Status kehadiran
+        <select name="s"><option>InsyaAllah Hadir</option><option>Mohon Maaf, Belum Bisa Hadir</option></select></label>
+      <label>Pesan atau doa untuk kedua mempelai<textarea name="m" rows="3" maxlength="400"></textarea></label>
+      <button class="btn" type="submit">Kirim Konfirmasi</button>
+      <div id="pvbox" hidden>
+        <label>Periksa pesan Anda sebelum dikirim<textarea id="pv" rows="6"></textarea></label>
+        <button id="wa" type="button" class="btn">Kirim lewat WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="gift">
+  <div class="wrap">
+    <h2 class="script gold">Wedding Gift</h2>
+    <div class="panel dark">
+      <svg class="flora tl"><use href="#flora"/></svg><svg class="flora tr"><use href="#flora"/></svg><svg class="flora bl"><use href="#flora"/></svg><svg class="flora br"><use href="#flora"/></svg>
+      <p id="gbank" class="cap"></p><p class="acc gold" id="gnum"></p><p id="ghold"></p>
+      <button id="copy" class="btn">Salin Nomor Rekening</button>
+    </div>
+  </div>
+</section>
+
+<section id="penutup" class="end">
+  <svg class="tree l"><use href="#tree"/></svg><svg class="tree r"><use href="#tree"/></svg>
+  <div class="wrap">
+    <h2 class="script gold">Happily Ever After</h2>
+    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir serta memberikan doa restu kepada kedua mempelai.</p>
+    <p>Terima kasih atas doa dan kasih sayang yang diberikan.</p>
+    <p class="script gold names">Hizul Wahyudin &amp; Tania Renata</p>
+    <p class="it">“May Allah bless our union with love, sakinah, mawaddah, and rahmah.”</p>
+  </div>
+</section>
+</main>
+
+<div id="lb" hidden><button class="x" aria-label="Tutup">×</button><button class="p" aria-label="Sebelumnya">‹</button><img alt=""><button class="n" aria-label="Berikutnya">›</button></div>
+<div id="toast" role="status"></div>
+<audio id="bgm" loop preload="metadata"></audio>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
